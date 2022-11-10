@@ -8,7 +8,8 @@ module.exports = {
     },
     output: {
         path: __dirname + "/dist/js/",
-        filename: "[name].min.js"
+        filename: "[name].min.js",
+        hashFunction: "xxhash64"
     },
     watch: true,
     module: {
