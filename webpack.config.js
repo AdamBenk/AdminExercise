@@ -4,7 +4,11 @@ const browserSyncPlugin = require('browser-sync-webpack-plugin');
 module.exports = {
     mode: 'production',
     entry: {
-        "main": ["./src/js/main.js", "./src/scss/main.scss"]
+        "main": [
+
+            "./src/js/main.js",
+            "./src/scss/main.scss"
+        ]
     },
     output: {
         path: __dirname + "/dist/js/",
@@ -51,7 +55,6 @@ module.exports = {
             server: {
                 baseDir: [__dirname]
             },
-            // proxy: 'http://localhost:8000/', => your local url
         })
     ]
 };
