@@ -1,3 +1,5 @@
+// theme colors
+$white: #fff;
 $darkgrey: #36383d;
 $lightgrey: #334052;
 $greyishblue: #82b5d8;
@@ -8,9 +10,27 @@ $greyishwhite: #bcc1cc;
 $lawngreen: #8cb95e;
 $shadowgreen: #8d918d;
 
-$header_color: $darkgrey;
-$leftmenu_color: $lightgrey;
-$leftmenu_li_font_color: $greyishwhite;
+// common
+$global_font: Radio-Canada-300;
+$global_bold_font: Radio-Canada-500;
+$default_padding: 5px;
+
+// header
+$header_height: 45px;
+$header_background_color: $darkgrey;
+$header_text_color: $white;
+$header_button_color: $white;
+$header_button_background_color: $lawngreen;
+$header_button_shadow_color: $shadowgreen;
+$header_button_hover_background_color: $white;
+$header_button_hover_text_color: $darkgrey;
+
+// menu
+$leftmenu_width: 200px;
+$leftmenu_background_color: $lightgrey;
+$leftmenu_text_color: $greyishwhite;
+
+$leftmenu_text_hover_color: $white;
 
 
 

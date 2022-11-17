@@ -1,0 +1,76 @@
+@import "variables";
+
+.menu-container {
+  width: $leftmenu_width;               // from variable
+  padding: $default_padding;
+  background-color: $leftmenu_background_color;
+  height: 100%;                         // 100% and box-sizing must be set too to border-box
+  box-sizing: border-box;
+  display: inline-block;                // display in row
+
+  .small-logo {
+    background-color: $leftmenu_background_color;
+    padding: 20px;
+    border: 0;
+    box-sizing: border-box;
+  }
+
+  .main-menu-title {
+    color: $white;
+    font-family: $global_bold_font;
+  }
+
+  .main-menu-item {
+    list-style-type: none;
+    padding: 0.5em 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    span, a {
+      color: $leftmenu_text_color;
+      text-decoration: none;
+      font-family: $global_bold_font;
+    }
+
+    a:hover, span:hover {
+      color: $leftmenu_text_hover_color;
+    }
+
+    img {
+      height: 24px;
+      width: auto;
+      margin-right: 0.5em;
+    }
+  }
+
+  menu.submenu {
+    margin: 0;
+    padding: 0 0 0 $default_padding;
+    list-style: none;
+
+    li {
+      margin: 5px 0 0 20px;
+      list-style-type: none;
+
+      a {
+        text-decoration: none;
+        color: $leftmenu_text_color;
+
+        &:hover {
+          color: $leftmenu_text_hover_color;
+        }
+      }
+
+      &:last-of-type {
+        margin-bottom: 20px;
+      }
+
+      img {
+        height: 1.5em;
+        width: auto;
+        margin-right: 0.5em;
+      }
+    }
+  }
+}

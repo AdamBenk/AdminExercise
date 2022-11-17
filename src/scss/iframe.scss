@@ -1,0 +1,7 @@
+@import "variables";
+
+iframe#main-content {
+  border: 0;
+  margin: 0;
+  width: calc(100% - 200px); // variable wont work here for some reason
+}

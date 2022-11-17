@@ -1,0 +1,45 @@
+@import "variables";
+
+.page-header {
+  background-color: $header_background_color; // required
+  position: sticky;               // good idea, always on top!
+  top: 0;                         // and stick directly to the top
+  width: 100%;                    // necessary to grow/shring with body
+  padding: $default_padding;      // also necessary to have some padding from the top
+  box-sizing: border-box;         // width includes border and padding too!
+  height: $header_height;
+
+  // flexbox related attributes
+  flex-direction: row;            // everything in row
+  place-content: start space-between; // start: align to top, space-between: make as big space as possible
+  display: flex;
+
+  div.logo {
+    width: 20em;                  // can be pixel, but em is related to font size, and for now logo is a text, em is ok
+    font-family: $global_bold_font; // from variable, not hardwired
+    color: $header_text_color;   // color for this
+    font-size: 20pt;
+    margin: 0;
+  }
+
+  div.buy-now {
+    width: 100px;
+    text-align: end;
+
+    button {
+      background-color: $header_button_background_color;
+      color: $header_button_color;
+      height: max-content;
+      padding: 6px 15px;
+      box-shadow: 2px 2px $header_button_shadow_color;
+      border: none;
+      font-family: $global_font;
+      font-size: 12px;
+
+      &:hover {
+        background-color: $header_button_hover_background_color;
+        color: $header_button_hover_text_color;
+      }
+    }
+  }
+}

@@ -8,32 +8,37 @@
 </head>
 
 <body>
-    <header>
-        <div>
-            <p>Admin Exercise</p>
+    <header class="page-header">
+        <div class="logo">
+            Admin Exercise
+        </div>
+        <div class="buy-now">
             <button>Buy now</button>
         </div>
     </header>
-    <div>
-        <img src="/src/scss/Color_circle_(RGB).svg.png" alt="">
-        <p>PAGES</p>
-        <details>
-            <summary>
-                <img src="/src/scss/airplane-outline.svg" alt="">
-                <span>Dashboard</span>
-            </summary>
-                <ul id="specul">
+    <main id="main-container">
+        <nav class="menu-container">
+            <section class="small-logo">
+                <img src="/src/images/Color_circle_(RGB).svg.png" alt="">
+            </section>
+            <summary class="main-menu-title">PAGES</summary>
+            <details>
+                <summary class="main-menu-item">
+                    <img src="/src/images/airplane-outline.svg" alt="">
+                    <span>Dashboard</span>
+                </summary>
+                <menu class="submenu">
                     <li><a href="#">Main</a></li>
                     <li><a href="#">Analytics</a></li>
                     <li><a href="#">Fintech</a></li>
-                </ul>
-        </details>
-        <details>
-            <summary>
-                <img src="/src/scss/airplane-outline.svg" alt="">
-                <span>E-Commerce</span>
-            </summary>
-                <ul id="specul">
+                </menu>
+            </details>
+            <details>
+                <summary class="main-menu-item">
+                    <img src="/src/images/airplane-outline.svg" alt="">
+                    <span>E-Commerce</span>
+                </summary>
+                <menu class="submenu">
                     <li><a href="#">Customers</a></li>
                     <li><a href="#">Orders</a></li>
                     <li><a href="#">Invoices</a></li>
@@ -44,14 +49,14 @@
                     <li><a href="#">Cart 2</a></li>
                     <li><a href="#">Cart 3</a></li>
                     <li><a href="#">Pay</a></li>
-                </ul>
-        </details>
-        <details>
-            <summary>
-                <img src="/src/scss/airplane-outline.svg" alt="">
-                <span>Community</span>
-            </summary>
-                <ul id="specul">
+                    </ul>
+            </details>
+            <details>
+                <summary class="main-menu-item">
+                    <img src="/src/images/airplane-outline.svg" alt="">
+                    <span>Community</span>
+                </summary>
+                <menu class="submenu">
                     <li><a href="#">Users - Tabs</a></li>
                     <li><a href="#">Users - Tiles</a></li>
                     <li><a href="#">Profile</a></li>
@@ -61,114 +66,122 @@
                     <li><a href="#">Forum Posts</a></li>
                     <li><a href="#">Meetups</a></li>
                     <li><a href="#">Meetups Posts</a></li>
-                </ul>
-        </details>
-        <details>
-            <summary>
-                <img src="/src/scss/airplane-outline.svg" alt="">
-                <span>Finance</span>
-            </summary>
-                <ul id="specul">
+                    </ul>
+            </details>
+            <details>
+                <summary class="main-menu-item">
+                    <img src="/src/images/airplane-outline.svg" alt="">
+                    <span>Finance</span>
+                </summary>
+                <menu class="submenu">
                     <li><a href="#">Cards</a></li>
                     <li><a href="#">Transactions</a></li>
                     <li><a href="#">Transaction Details</a></li>
-                </ul>
-        </details>
-        <details>
-            <summary>
-                <img src="/src/scss/airplane-outline.svg" alt="">
-                <span>Job Board</span>
-            </summary>
-                <ul id="specul">
+                </menu>
+            </details>
+            <details>
+                <summary class="main-menu-item">
+                    <img src="/src/images/airplane-outline.svg" alt="">
+                    <span>Job Board</span>
+                </summary>
+                <menu class="submenu">
                     <li><a href="#">Listing</a></li>
                     <li><a href="#">Job Posts</a></li>
                     <li><a href="#">Company Profile</a></li>
-                </ul>
-        </details>
-        <details>
-            <summary>
-                <img src="/src/scss/airplane-outline.svg" alt="">
-                <span>Tasks</span>
-            </summary>
-                <ul id="specul">
+                </menu>
+            </details>
+            <details>
+                <summary class="main-menu-item">
+                    <img src="/src/images/airplane-outline.svg" alt="">
+                    <span>Tasks</span>
+                </summary>
+                <menu class="submenu">
                     <li><a href="#">Kanban</a></li>
                     <li><a href="#">List</a></li>
-                </ul>
-        </details>
-        <nav>
-            <img src="/src/scss/airplane-outline.svg" alt="">
-            <a href="#">Messages</a>
-        </nav>
-        <nav>
-            <img src="/src/scss/airplane-outline.svg" alt="">
-            <a href="#">Inbox</a>
-        </nav>
-        <nav>
-            <img src="/src/scss/airplane-outline.svg" alt="">
-            <a href="#">Calendar</a>
-        </nav>
-        <nav>
-            <img src="/src/scss/airplane-outline.svg" alt="">
-            <a href="#">Campaignes</a>
-        </nav>
-        <details>
-            <summary>
-                <img src="/src/scss/airplane-outline.svg" alt="">
-                <span>Setting</span>
-            </summary>
-                <ul id="specul">
+                </menu>
+            </details>
+            <details>
+                <summary class="main-menu-item">
+                    <img src="/src/images/airplane-outline.svg" alt="">
+                    <a href="#">Messages</a>
+                </summary>
+            </details>
+            <details>
+                <summary class="main-menu-item">
+                    <img src="/src/images/airplane-outline.svg" alt="">
+                    <a href="#">Inbox</a>
+                </summary>
+            </details>
+            <details>
+                <summary class="main-menu-item">
+                    <img src="/src/images/airplane-outline.svg" alt="">
+                    <a href="#">Calendar</a>
+                </summary>
+            </details>
+            <details>
+                <summary class="main-menu-item">
+                    <img src="/src/images/airplane-outline.svg" alt="">
+                    <a href="#">Campaignes</a>
+                </summary>
+            </details>
+            <details>
+                <summary class="main-menu-item">
+                    <img src="/src/images/airplane-outline.svg" alt="">
+                    <span>Setting</span>
+                </summary>
+                <menu class="submenu">
                     <li><a href="#">My Account</a></li>
                     <li><a href="#">My Notifications</a></li>
                     <li><a href="#">Connected Apps</a></li>
                     <li><a href="#">Plans</a></li>
                     <li><a href="#">Billing & Invoices</a></li>
                     <li><a href="#">Give Feedback</a></li>
-                </ul>
-        </details>
-        <p>MORE</p>
-        <details>
-            <summary>
-                <img src="/src/scss/airplane-outline.svg" alt="">
-                <span>Utility</span>
-            </summary>
-                <ul id="specul">
+                </menu>
+            </details>
+            <summary class="main-menu-title">MORE</summary>
+            <details>
+                <summary class="main-menu-item">
+                    <img src="/src/images/airplane-outline.svg" alt="">
+                    <span>Utility</span>
+                </summary>
+                <menu class="submenu">
                     <li><a href="#">Changelog</a></li>
                     <li><a href="#">Roadmap</a></li>
                     <li><a href="#">FAQs</a></li>
                     <li><a href="#">Empty State</a></li>
                     <li><a href="#">404</a></li>
                     <li><a href="#">Knowledge Base</a></li>
-                </ul>
-        </details>
-        <details>
-            <summary>
-                <img src="/src/scss/airplane-outline.svg" alt="">
-                <span>Authentication</span>
-            </summary>
-                <ul id="specul">
+                </menu>
+            </details>
+            <details>
+                <summary class="main-menu-item">
+                    <img src="/src/images/airplane-outline.svg" alt="">
+                    <span>Authentication</span>
+                </summary>
+                <menu class="submenu">
                     <li><a href="#">Sign in</a></li>
                     <li><a href="#">Sign up</a></li>
                     <li><a href="#">Reset Password</a></li>
-                </ul>
-        </details>
-        <details>
-            <summary>
-                <img src="/src/scss/airplane-outline.svg" alt="">
-                <span>Onboarding</span>
-            </summary>
-                <ul id="specul">
+                </menu>
+            </details>
+            <details>
+                <summary class="main-menu-item">
+                    <img src="/src/images/airplane-outline.svg" alt="">
+                    <span>Onboarding</span>
+                </summary>
+                <menu class="submenu">
                     <li><a href="#">Step 1</a></li>
                     <li><a href="#">Step 2</a></li>
                     <li><a href="#">Step 3</a></li>
                     <li><a href="#">Step 4</a></li>
-                </ul>
-        </details>
-        <details>
-            <summary>
-                <img src="/src/scss/airplane-outline.svg" alt="">
-                <span>Components</span>
-            </summary>
-                <ul id="specul">
+                </menu>
+            </details>
+            <details>
+                <summary class="main-menu-item">
+                    <img src="/src/images/airplane-outline.svg" alt="">
+                    <span>Components</span>
+                </summary>
+                <menu class="submenu">
                     <li><a href="#">Button</a></li>
                     <li><a href="#">Input Forum</a></li>
                     <li><a href="#">Dropdown</a></li>
@@ -179,8 +192,10 @@
                     <li><a href="#">Breadcrumb</a></li>
                     <li><a href="#">Badge</a></li>
                     <li><a href="#">Avatar</a></li>
-                </ul>
-        </details>
-    </div>  
+                </menu>
+            </details>
+        </nav>
+        <iframe id="main-content" src="https://telex.hu"></iframe>
+    </main>
 </body>
 </html>
