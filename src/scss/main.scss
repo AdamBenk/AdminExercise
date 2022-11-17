@@ -2,113 +2,97 @@
 @import "variables"; 
 @import "fonts";
 
-html{
-  height: 100vh;
-}
-
 body {  
-  min-height: 100vh;
   margin: auto;
   color: white;
   font-family: Radio-Canada-300;
   font-size: 14px;
 }
 
-header {
+.page-header {
   position: sticky;
   top: 0;
-  width: 100%;
-  padding: 0.5em;
-  display: flex;
-  place-content: center center;
+  min-width: max-content;
+  padding: 10px;
   background-color: $header_color;
-  div {
-    width: 95%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    p {
-      font-family: Radio-Canada-500;
-      font-size: 20px;
-      margin: 0;
-    }
-    button {
+  font-family: Radio-Canada-500;
+  font-size: 20px;
+  .green-button-in-page-header {
+      float: right;
       background-color: $lawngreen;
       color: white;
-      height: max-content;
       padding: 6px 15px;
       box-shadow: 2px 2px $shadowgreen;
       border: none;
       font-family: Radio-Canada-300;
       font-size: 12px;
-    }
-    }  
+      &:hover {
+        background-color: $lightblue;
+      }
   }
+ }  
 
-header button:hover {
-    background-color: $lightblue;
-  }
-
-//I had a promblem setting a nice min-width for the div container. The max-content syntax does not include the pseudo element dropdown widgets.
-//When I decreased the viewport width the shrinkig did not stop at the dropdown widgets.  
-body >div {
-  max-width: 200px;
-  min-width: max-content;
+.container-for-left-menu {
+  width: 200px;
   height: 100%;
-  padding: 0 2%;
+  padding-left: 35px;
   background-color: $leftmenu_color;
+  color: $greyishwhite;
   img {
-    height: 1.5em;
+    height: 25px;
     width: auto;
-    margin-right: 0.5em;
+    margin-right: 15px;
   }
-  a {
-    list-style: none;
-    text-decoration: none;
-    color: white;
+  > img {
+    height: 30px;
+    padding: 10px 0;
+    margin: 0;
   }
   nav, details summary {
-    list-style-type: none;
-    padding: 0.5em 0;
+    padding: 5px 0;
     cursor: pointer;
     display: flex;
     align-items: center;
+    color: white;
+  }
+  details summary {
+    &:hover {
+      color: $greyishwhite;
+    }
+    &::after {
+      content: "";
+      display: inline-block;
+      border: 4px solid transparent;
+      border-top-color: white;
+      margin-left: 15px;
+    }
   }
   ul {
     margin: 0;
     padding: 0;
-    list-style: none;
-    transform: translateX(15%);
     li {
-      margin: 0.4em 0;
+      list-style: none;
+      margin: 5px 0 5px 40px;
       a {
+        list-style: none;
+        text-decoration: none;
         color: $greyishwhite;
+        &:hover {
+          color: white;
+        }
       }
     }
   }
-}
-
-body >div >img:first-child {
-  padding: 1em 0;
-  margin: 0;
-}
-
-details summary:hover, a:hover {
-  color: $greyishwhite;
-}
-
-ul li a:hover {
-  color: white;
-}
-
-//I could not flot the dropdown widget to the right using flexbox. 
-//However I could do this when I used display: box but in this case I could not align items in a center line because of the height of the image. 
-details summary::after {
-    content: "";
-    display: inline-block;
-    border: 0.4em solid transparent;
-    border-top-color: white;
-    margin-left: 1.5em;
+  nav {
+    a {
+      list-style: none;
+      text-decoration: none;
+      color: white;
+      &:hover {
+      color: $greyishwhite;
+      }
+    }
+  }
 }
 
 
