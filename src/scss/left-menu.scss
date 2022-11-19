@@ -30,13 +30,11 @@
     span, a {
       color: $leftmenu_text_color;
       text-decoration: none;
-      font-family: $global_bold_font;
+      font-family: $global_bold_font;  
+      &:hover {
+        animation: menu-item-hover-transition ease 0.5s forwards;
+      }
     }
-
-    a:hover, span:hover {
-      color: $leftmenu_text_hover_color;
-    }
-
     img {
       height: 24px;
       width: auto;
@@ -58,7 +56,7 @@
         color: $leftmenu_text_color;
 
         &:hover {
-          color: $leftmenu_text_hover_color;
+          animation: menu-item-hover-transition ease 0.5s forwards;
         }
       }
 
@@ -72,5 +70,12 @@
         margin-right: 0.5em;
       }
     }
+  }
+}
+
+@keyframes menu-item-hover-transition {
+  to {
+    background-color: $leftmenu_text_hover_background_color;
+    color: $leftmenu_text_hover_color;
   }
 }
