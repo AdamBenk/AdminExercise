@@ -32,8 +32,11 @@
       text-decoration: none;
       font-family: $global_bold_font;  
       &:hover {
-        animation: menu-item-hover-transition ease 0.5s forwards;
+        animation: menu-item-hover-transition 1.5s ease forwards;
       }
+    }
+    a:focus {
+      animation: menu-item-hover-transition ease 0.5s forwards;
     }
     img {
       height: 24px;
@@ -55,9 +58,10 @@
         text-decoration: none;
         color: $leftmenu_text_color;
 
-        &:hover {
+        &:hover, &:focus {
           animation: menu-item-hover-transition ease 0.5s forwards;
         }
+        
       }
 
       &:last-of-type {
