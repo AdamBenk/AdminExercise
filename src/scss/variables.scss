@@ -32,5 +32,9 @@ $leftmenu_text_color: $greyishwhite;
 $leftmenu_text_hover_background_color: $lightblue;
 $leftmenu_text_hover_color: $darkgrey;
 
-
+// menu item hover and focus
+@mixin menu-item-hover {
+    background-color: $leftmenu_text_hover_background_color;
+    color:  $leftmenu_text_hover_color;
+  }
 

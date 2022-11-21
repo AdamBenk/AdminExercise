@@ -31,12 +31,15 @@
       color: $leftmenu_text_color;
       text-decoration: none;
       font-family: $global_bold_font;  
+      transition: background-color, color 0.5s ease;
+     
       &:hover {
-        animation: menu-item-hover-transition 1.5s ease forwards;
+        @include menu-item-hover;
       }
+    
     }
     a:focus {
-      animation: menu-item-hover-transition ease 0.5s forwards;
+      @include menu-item-hover;
     }
     img {
       height: 24px;
@@ -57,9 +60,10 @@
       a {
         text-decoration: none;
         color: $leftmenu_text_color;
-
+        transition: background-color, color 0.5s ease;
+        
         &:hover, &:focus {
-          animation: menu-item-hover-transition ease 0.5s forwards;
+          @include menu-item-hover;
         }
         
       }
@@ -77,9 +81,3 @@
   }
 }
 
-@keyframes menu-item-hover-transition {
-  to {
-    background-color: $leftmenu_text_hover_background_color;
-    color: $leftmenu_text_hover_color;
-  }
-}
