@@ -26,21 +26,18 @@
     cursor: pointer;
     display: flex;
     align-items: center;
-
-    span, a {
-      color: $leftmenu_text_color;
-      text-decoration: none;
-      font-family: $global_bold_font;  
-      transition: background-color, color 0.5s ease;
-     
-      &:hover {
-        @include menu-item-hover;
-      }
-    
-    }
-    a:focus {
+   
+    &:hover, &:focus-within {
       @include menu-item-hover;
     }
+   
+    span, a {
+      @include menu-item-style; 
+      &:hover, &:focus {
+      @include menu-item-hover;
+      }
+    }
+
     img {
       height: 24px;
       width: auto;
@@ -58,14 +55,11 @@
       list-style-type: none;
 
       a {
-        text-decoration: none;
-        color: $leftmenu_text_color;
-        transition: background-color, color 0.5s ease;
-        
+        @include menu-item-style;
+        font-family: $global_font;
         &:hover, &:focus {
           @include menu-item-hover;
         }
-        
       }
 
       &:last-of-type {
@@ -77,6 +71,10 @@
         width: auto;
         margin-right: 0.5em;
       }
+    }
+
+    li:hover, li:focus-within {
+      @include menu-item-hover;
     }
   }
 }

@@ -29,12 +29,19 @@ $header_button_hover_text_color: $darkgrey;
 $leftmenu_width: 200px;
 $leftmenu_background_color: $lightgrey;
 $leftmenu_text_color: $greyishwhite;
-$leftmenu_text_hover_background_color: $lightblue;
+$leftmenu_text_hover_background_color: $greyishwhite;
 $leftmenu_text_hover_color: $darkgrey;
 
-// menu item hover and focus
-@mixin menu-item-hover {
+// menu items styling
+
+ @mixin menu-item-style {
+    color: $leftmenu_text_color;
+    text-decoration: none;
+    font-family: $global_bold_font;  
+    transition: background-color, color 0.5s ease;
+  }
+
+  @mixin menu-item-hover {
     background-color: $leftmenu_text_hover_background_color;
     color:  $leftmenu_text_hover_color;
   }
-

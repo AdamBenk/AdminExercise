@@ -5,6 +5,10 @@
 @import "left-menu";
 @import "iframe";
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: $global_font;
   font-size: 14px;
