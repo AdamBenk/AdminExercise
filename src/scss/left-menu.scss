@@ -19,23 +19,21 @@
     color: $white;
     font-family: $global_bold_font;
   }
-
+  
   .main-menu-item {
-    list-style-type: none;
+    position: relative;
     padding: 0.5em 0;
-    cursor: pointer;
     display: flex;
     align-items: center;
+    @include menu-item-style; 
    
     &:hover, &:focus-within {
       @include menu-item-hover;
     }
-   
-    span, a {
-      @include menu-item-style; 
-      &:hover, &:focus {
-      @include menu-item-hover;
-      }
+
+    a {
+      color: inherit;
+      text-decoration: none;
     }
 
     img {
@@ -43,23 +41,69 @@
       width: auto;
       margin-right: 0.5em;
     }
+
+    .dark-plane {
+      display: none;
+    }
+
+    .dropdown-arrow { 
+      position: absolute;
+      right: 10px;
+      border: solid 7px transparent;
+      border-top: solid 7px $leftmenu_text_color;
+      transform: translateY(7px);
+    }
+
+    .mail-count-box {
+      position: absolute;
+      right: 10px;
+      padding: 0 0.4em;
+      border-radius: 20%;
+      background-color: $purple;
+      color: white;
+    } 
+  }
+
+  details {
+    &:hover >.main-menu-item .white-plane {
+      display: none;
+    }
+    &:hover >.main-menu-item .dark-plane {
+      display: inline;
+    }
+    &:focus-within >.main-menu-item .white-plane {
+      display: none;
+    }
+    &:focus-within >.main-menu-item .dark-plane {
+      display: inline;
+    }
+    &:hover >.main-menu-item .dropdown-arrow {
+      border-bottom: solid 7px $leftmenu_text_hover_color;
+      transform: translateY(-3.5px);
+    }
+    &:focus-within >.main-menu-item .dropdown-arrow {
+      border-bottom: solid 7px $leftmenu_text_hover_color;
+      transform: translateY(-3.5px);
+    }
   }
 
   menu.submenu {
     margin: 0;
     padding: 0 0 0 $default_padding;
-    list-style: none;
 
     li {
       margin: 5px 0 0 20px;
       list-style-type: none;
+      @include menu-item-style;
+      font-family: $global_font;
+      
+      &:hover, &:focus-within {
+        @include menu-item-hover;
+      }
 
       a {
-        @include menu-item-style;
-        font-family: $global_font;
-        &:hover, &:focus {
-          @include menu-item-hover;
-        }
+        color: inherit;
+        text-decoration: none;
       }
 
       &:last-of-type {
@@ -72,10 +116,5 @@
         margin-right: 0.5em;
       }
     }
-
-    li:hover, li:focus-within {
-      @include menu-item-hover;
-    }
   }
 }
-

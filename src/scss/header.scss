@@ -5,6 +5,7 @@
   position: sticky;               // good idea, always on top!
   top: 0;                         // and stick directly to the top
   width: 100%;                    // necessary to grow/shring with body
+  min-width: max-content;
   padding: $default_padding;      // also necessary to have some padding from the top
   box-sizing: border-box;         // width includes border and padding too!
   height: $header_height;

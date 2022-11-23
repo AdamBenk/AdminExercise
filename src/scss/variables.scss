@@ -5,7 +5,7 @@ $lightgrey: #334052;
 $greyishblue: #82b5d8;
 $lightblue: #a4e0f8;
 $darkerblue: #3894d1;
-$purple: #7e23bb;
+$purple: #8f4aeb;
 $greyishwhite: #bcc1cc;
 $lawngreen: #8cb95e;
 $shadowgreen: #8d918d;
@@ -27,6 +27,8 @@ $header_button_hover_text_color: $darkgrey;
 
 // menu
 $leftmenu_width: 200px;
+$leftmenu-mobile-width: 100%;
+$leftmenu-mobile-height: 60px;
 $leftmenu_background_color: $lightgrey;
 $leftmenu_text_color: $greyishwhite;
 $leftmenu_text_hover_background_color: $greyishwhite;
@@ -36,8 +38,8 @@ $leftmenu_text_hover_color: $darkgrey;
 
  @mixin menu-item-style {
     color: $leftmenu_text_color;
-    text-decoration: none;
     font-family: $global_bold_font;  
+    cursor: pointer;
     transition: background-color, color 0.5s ease;
   }
 

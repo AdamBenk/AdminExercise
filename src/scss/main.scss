@@ -4,10 +4,7 @@
 @import "header";
 @import "left-menu";
 @import "iframe";
-
-html {
-  height: 100%;
-}
+@import "left-menu-mobile";
 
 body {
   font-family: $global_font;
@@ -21,5 +18,33 @@ body {
   width: 100%;
   height: calc(100% - 45px);
   display: flex;
-  flex-direction: row;
 }
+
+#main-container-mobile {
+  width: $leftmenu_width;              
+  background-color: $leftmenu_background_color;
+
+  .button-mobile-menu {
+    display: block;
+    margin: 35px;
+    margin-top: 10px;
+    height: 40px;
+    width: 45px;
+    border: none;
+    background-color: transparent;
+
+    .button-decor-item {
+        height: 10%;
+        width: 100%;
+        margin: 2px;
+        background-color: rgb(41, 77, 236);
+        border: solid 1px white;
+        border-radius: 15%;
+    }
+  }
+}
+
+#main-container-mobile[open] .button-mobile-menu {
+  display: none;    
+}
+
