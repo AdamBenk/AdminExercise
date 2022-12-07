@@ -1,9 +1,7 @@
-@import "inner";
 @import "variables";
 @import "fonts";
 @import "header";
 @import "left-menu";
-@import "iframe";
 @import "left-menu-mobile";
 
 body {
@@ -24,27 +22,14 @@ body {
   width: $leftmenu_width;              
   background-color: $leftmenu_background_color;
 
-  .button-mobile-menu {
+  #mobile-container-summary {
     display: block;
-    margin: 35px;
-    margin-top: 10px;
-    height: 40px;
-    width: 45px;
-    border: none;
-    background-color: transparent;
-
-    .button-decor-item {
-        height: 10%;
-        width: 100%;
-        margin: 2px;
-        background-color: rgb(41, 77, 236);
-        border: solid 1px white;
-        border-radius: 15%;
-    }
-  }
+  }  
 }
 
-#main-container-mobile[open] .button-mobile-menu {
-  display: none;    
+iframe#main-content {
+  border: 0;
+  margin: 0;
+  width: calc(100% - 200px); // variable wont work here for some reason
 }
 

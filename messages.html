@@ -3,11 +3,165 @@
     <title>Messages</title>
     <meta name="description" content="Admin Exercise - Messages">
     <meta name="keywords" content="css,html,exercise">
-    <link rel="stylesheet" href="dist/css/main.min.css" />
+    <link rel="stylesheet" href="dist/css/iframe.min.css"/>
     <script language="JavaScript" src="dist/js/main.min.js" />
 </head>
 
 <body>
-    Message
+    <header id="messages-header">
+        <nav id="messages-header-1st-line">
+            <button class="button-in-header">
+                <img src="../src/images/search-line-icon.png" alt="">
+            </button>
+            <button class="button-in-header">
+                <img src="../src/images/chat-bubble-icon.png" alt="">
+            </button>
+            <button class="button-in-header">
+                <img src="../src/images/exclamation-round-icon.png" alt="">
+            </button>
+            <section>
+                <img class="logo-in-header" src="../src/images/angle-circle-arrow-right-icon.png" alt="">    
+            </section>
+            <select name="" id="Acme-select-header">
+                <option value="">Acme Inc.</option>
+                <option value="">Option 2</option>
+            </select> 
+        </nav>  
+        <nav id="messages-header-2nd-line">
+            <div id="left-column-in-line2">
+                <div>
+                    <img class="logo-in-header" src="../src/images/angle-circle-arrow-right-icon.png" alt="">    
+                    <select name="" id="Acme-select-header">
+                        <option value="">Acme Inc.</option>
+                        <option value="">Option 2</option>
+                    </select> 
+                </div>
+                <button class="messages-button">
+                    <img src="../src/images/edit-pen-icon.png" alt="">
+                </button>
+            </div>
+            <div id="right-column-in-line2">
+                <div>
+                    <button class="messages-button">
+                        <img src="../src/images/trash-bin-icon.png" alt="">
+                    </button>
+                    <button class="messages-button">
+                        <img src="../src/images/star-icon.png" alt="">
+                    </button>
+                    <button class="messages-button">
+                        <img src="../src/images/exclamation-round-icon.png" alt="">
+                    </button>
+                    <button class="messages-button">
+                        <img src="../src/images/check-mark-line-icon.png" alt="">
+                    </button>
+                </div>
+                <div>
+                    <p>10 of 467</p>
+                    <button class="messages-button">
+                        <img src="../src/images/arrow-thin-chevron-left-icon.png" alt="">
+                    </button>
+                    <button class="messages-button">
+                        <img src="../src/images/arrow-thin-chevron-right-icon.png" alt="">
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main id="messages-main">
+        <div id="sort-mails-on-left">
+            <input type="text" placeholder="Search...">
+            <nav id="messages-menu-options">
+                <details class="messages-sort-menu">
+                    <summary> Primary</summary>            
+                </details>
+                <details class="messages-sort-menu">
+                    <summary>Social</summary>
+                </details>
+                <details class="messages-sort-menu">
+                    <summary>Promotions</summary>
+                </details>
+            </nav>
+            <section>INBOX (44)</section>
+            <ul>
+                <li class="mail-details">
+                    <img src="../src/images/green-circle-icon.png" alt="">
+                    <p>Dominim Lamakani</p>
+                    <p>4 Aug</p>
+                    <p>Chill your mnind with this amazing offer ... Lorem ispum dolor sit amet, consecte adipiscing elit aute irure dolor...</p>
+                </li>
+                <li class="mail-details">
+                    <img src="../src/images/green-circle-icon.png" alt="">
+                    <p>Dominim Lamakani</p>
+                    <p>4 Aug</p>
+                    <p>Chill your mnind with this amazing offer ... Lorem ispum dolor sit amet, consecte adipiscing elit aute irure dolor...</p>
+                </li>
+                <li class="mail-details">
+                    <img src="../src/images/green-circle-icon.png" alt="">
+                    <p>Dominim Lamakani</p>
+                    <p>4 Aug</p>
+                    <p>Chill your mnind with this amazing offer ... Lorem ispum dolor sit amet, consecte adipiscing elit aute irure dolor...</p>
+                </li>
+            </ul>
+        </div>
+        <div id="inspect-mails-on-right">
+            <header>
+                <div>
+                    <h2>Chill your mind with this amazing offer </h2>
+                    <img src="src/images/dessert-ice-cream-icon.png" alt="">
+                </div>
+                <button id="messages-blue-button">Exciting news</button>
+            </header>
+            <div id="mail-thread">
+                <div class="earlier-mails">
+                    <div>
+                        <img src="/src/images/green-circle-icon.png" alt="">
+                        <div>
+                            <h4>Dominik Lamakani</h4>
+                            <p>Lorem ispum dolor sit amet, consecte adipiscing elit aute irure dolor...</p>
+                        </div> 
+                    </div>
+                    <p>Sep 3, 3:13 PM</p>
+                </div>
+                <div class="earlier-mails">
+                    <div>
+                        <img src="/src/images/green-circle-icon.png" alt="">
+                        <div>
+                            <h4>Dominik Lamakani</h4>
+                            <p>Lorem ispum dolor sit amet, consecte adipiscing elit aute irure dolor...</p>
+                        </div> 
+                    </div>
+                    <p>Sep 3, 3:13 PM</p>
+                </div>
+                <div class="earlier-mails">
+                    <div>
+                        <img src="/src/images/green-circle-icon.png" alt="">
+                        <div>
+                            <h4>Dominik Lamakani</h4>
+                            <p>Lorem ispum dolor sit amet, consecte adipiscing elit aute irure dolor...</p>
+                        </div> 
+                    </div>
+                    <p>Sep 3, 3:13 PM</p>
+                </div>
+                <div class="latest-mail-in-thread">
+                    <p>
+                    Hey Acme, 
+                    <br>
+                    <br>
+                    Lorem ispum dolor sit amet, consecte adipiscing elit aute irure dolor...
+                    </p>
+                    <img src="/src/images/desktop_pic (2).png" alt="">
+                    <p>
+                    Lorem ispum dolor sit amet, consecte adipiscing elit aute irure dolor...
+                    <br>
+                    <br>
+                    Cheers
+                    <br>
+                    <br>
+                    Dominik Lamakani
+                    </p>
+                </div>
+            </div>
+        </div> 
+    </main>
 </body>
 </html>

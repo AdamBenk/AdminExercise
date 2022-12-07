@@ -6,6 +6,15 @@
         #main-container-mobile {
             width: 100%;
             
+            #mobile-container-summary {
+                display: list-item;
+
+                &::marker {
+                    content: "xxx";
+                    font-size: 2em;
+                }
+            }
+
             .menu-container {
                 width: 100%;;
             }

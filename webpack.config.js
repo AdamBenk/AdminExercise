@@ -5,10 +5,13 @@ module.exports = {
     mode: 'production',
     entry: {
         "main": [
-
             "./src/js/main.js",
-            "./src/scss/main.scss"
+            "./src/scss/main.scss",
+        ],
+        "iframe": [
+            "./src/scss/iframe.scss",
         ]
+
     },
     output: {
         path: __dirname + "/dist/js/",

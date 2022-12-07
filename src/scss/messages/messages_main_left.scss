@@ -1,0 +1,94 @@
+@import "../variables";
+
+#messages-main {
+    display: flex;
+
+    #sort-mails-on-left {
+        width: 250px;
+        box-sizing: border-box;
+        border-right: solid 0.5px $messages-background-color;
+        padding-left: 15px;
+        font-size: 12px;
+        color: $messages-font-color;
+
+        input {
+            height: 25px;
+            border: solid 0.5px $messages-background-color;
+            border-radius: 5px;
+            margin-top: 14px;
+        }
+
+        #messages-menu-options {
+            display: flex;
+           
+            summary {
+                list-style: none;
+                padding: 20px 5px;
+                font-size: 14px;
+                border-bottom: solid 0.5px $messages-background-color;
+                background-color: white;
+
+                &:hover {
+                    background-color: $messages-background-color;
+                    color: $purple;
+                    border-bottom: solid 2px $purple;
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+
+                &:active {
+                    background-color: $measseges-mail-hover-color;
+                    font-weight: 600;
+                }
+            }
+        }
+        
+        section {
+            font-family: $global_bold_font;
+            font-weight: 800;
+            margin: 10px 0;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+
+            .mail-details {
+                width: 220px;
+                display: grid;
+                grid-template-columns: 35px 1fr 31px;
+                grid-template-rows: auto;
+                margin-bottom: 10px;
+                padding: 4px;
+                border-radius: 5px;
+                transition: 0.5s ease background-color; 
+
+                &:hover {
+                    background-color: $measseges-mail-hover-color;
+                }
+
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
+                
+                p {
+                    margin: 8px 0;
+                }
+
+                p:first-of-type {
+                    font-weight: 600;
+                    color: black;
+                }
+
+                p:last-of-type {
+                    margin: 0;
+                    grid-row-start: 2;
+                    grid-row-end: 3;
+                    grid-column-start: 2;
+                    grid-column-end: 4;
+                }
+            }
+        }
+    }
+}

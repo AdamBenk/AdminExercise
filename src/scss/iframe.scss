@@ -1,7 +1,12 @@
 @import "variables";
+@import "fonts";
+@import "messages/messages_header";
+@import "messages/messages_main_right";
+@import "messages/messages_main_left";
 
-iframe#main-content {
-  border: 0;
+body {
+  font-family: $global_font;
+  font-size: 14px;
+  padding: 0;
   margin: 0;
-  width: calc(100% - 200px); // variable wont work here for some reason
 }

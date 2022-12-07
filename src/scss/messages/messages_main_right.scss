@@ -1,0 +1,92 @@
+@import "../variables";
+
+#messages-main {
+    
+    #inspect-mails-on-right {
+        height: 80vh;
+        flex-grow: 1;
+        background-color: $messages-background-color;
+        padding: 0 1.5%;
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 10px 0;
+            
+            div {
+                display: flex;
+                align-items: center;
+
+                h2 {
+                    display: inline-block;
+                    margin: 0;
+                }
+            
+                img {
+                    height: 30px;
+                    width: auto;
+                    margin-left: 10px;
+                }
+            }
+        
+            #messages-blue-button {
+                height: 25px;
+                background-color: $messages-button-blue-background;
+                font-size: 12px;
+                color: $messages-button-blue-font;
+                border: transparent;
+                border-radius: 20px;
+                box-shadow: -3px 3px 3px $measseges-mail-hover-color;
+
+                &:hover {
+                    background-color: $measseges-mail-hover-color;
+                    box-shadow: -3px 3px 3px $messages-button-blue-font;
+                }
+
+                &:active {
+                    background-color: $messages-button-blue-font;
+                    color: $messages-button-blue-background;
+                    box-shadow: -3px 3px 3px black;
+                }
+            }
+        }
+
+        #mail-thread {
+            height: 75%;
+            background-color: white;
+            font-size: 12px;
+            box-shadow: -5px 5px 5px $measseges-mail-hover-color;
+           
+            .earlier-mails {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+
+                div {
+                    display: inline-block;
+
+                    img {
+                        height: 30px;
+                        width: 30px;
+                    }
+
+                    h4, p {
+                        margin: 5px;
+                    }
+                }
+            }
+
+            .latest-mail-in-thread {
+                padding: 10px;
+
+                img {
+                    height: 100px;
+                    width: auto;
+                }
+            }
+        }
+    }
+}
